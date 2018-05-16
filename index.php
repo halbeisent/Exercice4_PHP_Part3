@@ -9,9 +9,12 @@
   <?php
   // Je remplis la variable $firstNumber
   $firstNumber = 1;
-  while ($firstNumber <= 10) { //Tant que la valeur de $firstNumber est inférieure à 10,
-    echo $firstNumber . '<br />'; //On affiche la valeur de $firstNumber,
-    $firstNumber = $firstNumber+($firstNumber/2); //puis on remplace son contenu par son addition à son quotient (obtenu via ($firstNumber/2)
+  //Tant que la valeur de $firstNumber est inférieure à 10,
+  while ($firstNumber <= 10) {  ?>
+    <!-- On affiche la valeur de $firstNumber, -->
+  <p><?php  echo $firstNumber;?></p>
+  <!-- puis on remplace son contenu par son addition à son quotient (obtenu via ($firstNumber/2) -->
+    <?php $firstNumber = $firstNumber + ($firstNumber / 2);
   }
   ?>
 </body>
